@@ -13,7 +13,7 @@ from .base import BaseCrawler
 class GithubCrawler(BaseCrawler):
     model = RepositoryDocument
 
-    def __init__(self, ignore=(".git", ".toml", ".lock", ".png")) -> None:
+    def __init__(self, ignore=(".git", ".toml", ".lock", ".png", ".jpg", ".gif", ".mp4", ".webm", ".dae")) -> None:
         super().__init__()
         self._ignore = ignore
 

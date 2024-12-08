@@ -7,8 +7,8 @@ parameters:
   links:
     # ROS 2 docs
     - https://github.com/ros2/ros2_documentation
-    #- https://github.com/ros-navigation/docs.nav2.org.git
+    - https://github.com/ros-navigation/docs.nav2.org.git
     # MoveIt 2 tutorials
-    #- https://github.com/moveit/moveit2_tutorials.git
+    - https://github.com/moveit/moveit2_tutorials.git
     # Gazebo docs
-    #- https://github.com/gazebosim/docs.git
+    - https://github.com/gazebosim/docs.git
