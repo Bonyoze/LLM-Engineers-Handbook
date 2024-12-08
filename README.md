@@ -1,5 +1,10 @@
 # ROS2 RAG Project
 
+### Environment and Tooling
+[docker-compose.yml](https://github.com/Bonyoze/ros2-rag-project/blob/main/docker-compose.yml)
+
+![image](https://github.com/user-attachments/assets/fa2d56c3-b97c-4fd3-b255-93f9384b6fe1)
+
 ### ETL Pipeline
 Ingested URLs
 - https://github.com/ros2/ros2_documentation
