@@ -14,11 +14,15 @@ Ingested URLs
 
 Raw data from sources can be fetched and stored in `mongodb` using `poetry poe run-digital-data-etl`.
 
+Source urls are supplied with [digital_data_etl_ros2.yaml](https://github.com/Bonyoze/ros2-rag-project/blob/main/configs/digital_data_etl_ros2.yaml).
+
 This stores `4` documents using the sources listed above.
 
 ### Featurization Pipeline
 
 Raw data can be cleaned, chunked and embedded into the vector db using `poetry poe run-feature-engineering-pipeline`.
+
+Featurization target is specified with [feature_engineering.yaml](https://github.com/Bonyoze/ros2-rag-project/blob/main/configs/feature_engineering.yaml).
 
 This creates `68466` chunks (`1500` chunk size, `100` chunk overlap) from the collected raw data.
 
