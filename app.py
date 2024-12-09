@@ -4,7 +4,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import FieldCondition, Filter, MatchValue
 import numpy as np
 
-hf_token = "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"
+hf_token = "HUGGINGFACE_ACCESS_TOKEN"
 
 client = InferenceClient(token=hf_token)
 
