@@ -12,15 +12,25 @@ Ingested URLs
 - https://github.com/moveit/moveit2_tutorials.git
 - https://github.com/gazebosim/docs.git
 
-Raw data fetched and stored in `mongodb` using `poetry poe run-digital-data-etl`.
+Raw data from sources can be fetched and stored in `mongodb` using `poetry poe run-digital-data-etl`.
 
-Storing `4` documents using the sources listed above.
+This stores `4` documents using the sources listed above.
 
 ### Featurization Pipeline
 
-Raw data cleaned, chunked and embedded into the vector db using `poetry poe run-feature-engineering-pipeline`.
+Raw data can be cleaned, chunked and embedded into the vector db using `poetry poe run-feature-engineering-pipeline`.
 
-Creating `68466` chunks (`1500` chunk size, `100` chunk overlap) from the collected raw data.
+This creates `68466` chunks (`1500` chunk size, `100` chunk overlap) from the collected raw data.
 
 ### Deploying the App
-https://huggingface.co/spaces/Bonyoze/ros2-rag-project
+
+Gradio app is setup to be ran via `poetry run python -m app` and can be utilized at `http://localhost:7860`
+
+Example demo runs:
+
+1.
+![image](https://github.com/user-attachments/assets/18be93a0-e11e-4fc0-a84c-f4627c2835e2)
+2.
+![image](https://github.com/user-attachments/assets/991c7d26-df48-4a40-9ea5-5799a23346e3)
+3.
+![image](https://github.com/user-attachments/assets/433138f9-e2cd-4570-aae2-c4527f5ada03)
