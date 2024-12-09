@@ -1,4 +1,17 @@
 services:
+  app:
+    image: python:3.11-slim-bullseye
+    container_name: "ros2_rag_app"
+    command: ["python", "/app/app.py"]
+    working_dir: /app
+    volumes:
+      - .:/app
+    networks:
+      - local
+    depends_on:
+      - mongo
+      - qdrant
+
   mongo:
     image: mongo:latest
     container_name: "llm_engineering_mongo"
